@@ -1,124 +1,108 @@
-* {
+/* Estilos principais do AlphaForce-AI */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f9fc;
     color: #333;
 }
 
 header {
-    background-color: #1e90ff;
-    color: white;
-    padding: 20px;
+    background-color: #202840;
+    color: #fff;
     text-align: center;
+    padding: 2rem 1rem;
 }
 
 header h1 {
-    font-size: 2.5em;
+    margin: 0;
+    font-size: 2.2rem;
 }
 
 header p {
-    margin-top: 10px;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
 }
 
 main {
-    padding: 20px;
-}
-
-.planos {
-    max-width: 1000px;
+    padding: 2rem 1rem;
+    max-width: 960px;
     margin: auto;
 }
 
-.planos h2 {
-    text-align: center;
-    margin-bottom: 30px;
+.planos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .plano {
-    background-color: white;
-    border: 2px solid #1e90ff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: transform 0.3s;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .plano:hover {
-    transform: scale(1.03);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
-.plano h3 {
-    color: #1e90ff;
+.plano h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #202840;
+}
+
+.preco {
+    font-size: 1.2rem;
+    color: #2e7d32;
+    font-weight: bold;
 }
 
 .plano ul {
-    margin-top: 10px;
     list-style: none;
+    padding: 0;
+    margin: 1rem 0;
 }
 
 .plano ul li {
-    margin: 8px 0;
-}
-
-.destaque {
-    background-color: #1e90ff;
-    color: white;
-}
-
-.destaque h3 {
-    color: white;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px;
-}
-/* 🔥 Estilo dos Botões de Ações */
-.acoes {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f5f5f5;
-}
-
-.acoes h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.botoes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .botao {
-    background-color: #007bff;
+    display: inline-block;
+    background-color: #202840;
     color: white;
-    text-decoration: none;
-    padding: 12px 24px;
+    padding: 0.8rem 1.5rem;
     border-radius: 8px;
+    text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .botao:hover {
-    background-color: #0056b3;
+    background-color: #334080;
 }
 
 .botao.destaque {
-    background-color: #28a745;
+    background-color: #d32f2f;
 }
 
 .botao.destaque:hover {
-    background-color: #1e7e34;
+    background-color: #b71c1c;
 }
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #202840;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Responsivo */
+@media (min-width: 768px)
+
